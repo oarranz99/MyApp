@@ -1,0 +1,11 @@
+.seleccionado{
+	color: red;
+}
+.titulo1{
+	color:blue;
+	border: solid green 2px;
+}
+.titulo2{
+	color: red;
+	border: solid red 2px;
+}

@@ -1,0 +1,24 @@
+<p>hola works! {{nombre}}</p>
+<p>{{fechaNac | date}}</p>
+
+<div *ngIf="mostrar"> Mostramos </div>
+<button (click) = "mostrar = !mostrar">Mostrar/Ocultar</button>
+
+<div class="{{mostrar ? 'seleccionado': ''}}">importante o no</div>
+<h2 [ngClass]="claseTitulo"> Titulo</h2>
+
+<button (click) = "cambiarTitulo()">Cambiar estilo del titulo</button>
+
+<button id="b1" [disabled]="mostrar" (click)="onClickBoton($event)">
+	Boton 1
+</button>
+
+<button id="b2" [disabled]="mostrar" (click)="onClickBoton($event)">
+	Boton 2
+</button>
+{{'pruebo pipe | TituloHtml'}}
+
+
+<form>
+
+</form>
