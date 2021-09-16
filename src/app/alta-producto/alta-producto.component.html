@@ -1,0 +1,31 @@
+<p>alta-producto works!</p>
+<!-- Aqui va el formulario -->
+
+<form #f="ngForm"  (ngSubmit) = "onSubmit(f)">
+	<div class="form-group">
+		<label>Id</label>
+		<input type="text" name="id" ngModel #id="ngModel" required>
+	</div>
+
+	<div class="form-group">
+		<label>Nombre</label>
+		<input type="text" name="nombre" ngModel #nombre="ngModel" required>
+	</div>
+
+	<div class="form-group">
+		<label>Descripcion</label>
+		<input type="text-area" name="descripcion" ngModel #descripcion="ngModel" required>
+	</div>
+
+	<div class="form-group">
+		<label>Precio</label>
+		<input type="number" name="precio" ngModel #precio="ngModel" required>
+	</div>
+
+	<div class="form-group">
+		<label>Cantidad</label>
+		<input type="number" name="cantidad" ngModel #cantidad="ngModel" required>
+	</div>
+	<input class="btn btn-primary" type="submit" [disabled]="!f.valid" value="Enviar">
+
+</form>
